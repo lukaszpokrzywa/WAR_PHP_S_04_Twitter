@@ -31,6 +31,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			echo 'Nieprawidłowe dane<br>';
 		}
 	}
+	
+	$conn->close();
+	$conn = null;
 }
 
 ?>
