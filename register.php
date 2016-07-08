@@ -25,7 +25,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		
 	} else {
-		echo 'Nieprawidłowe dane<br>';
+		if($user) {
+			echo "Podany adres e-mail istnieje w bazie danych<br>";
+		} else {
+			echo 'Nieprawidłowe dane<br>';
+		}
 	}
 }
 
